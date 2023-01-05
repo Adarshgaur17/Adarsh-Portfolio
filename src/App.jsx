@@ -4,6 +4,8 @@ import Home from "./Home";
 import Skills from "./Skills";
 import Projects from "./Projects";
 
+import Footer from "./Footer";
+
 function App() {
   return (
     <>
@@ -11,6 +13,8 @@ function App() {
       <Home />
       <Skills />
       <Projects />
+
+      <Footer />
     </>
   );
 }

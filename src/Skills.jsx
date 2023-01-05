@@ -32,7 +32,7 @@ function Skills() {
     },
   ];
   return (
-    <div className="p-16 mt-32 bg-blue-100 ">
+    <div className="p-16 mt-32 bg-blue-100 " id="skill">
       <h1 className="text-2xl ml-6 text-gray-600 font-bold underline underline-offset-1">
         MY SKILLS
       </h1>
