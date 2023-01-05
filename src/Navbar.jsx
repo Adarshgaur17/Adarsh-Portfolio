@@ -19,11 +19,11 @@ function Navbar() {
           onClick={() => setIsSideBarOpen(!isSideBarOpen)}
           className="text-gray-500 text-2xl ml-4 mt-2 md:hidden"
         />
-        <div className="hidden md:flex justify-end text-gray-500 mt-4 mr-5 font-bold text-2xl space-x-8 underline underline-offset-1">
-          <h1>HOME</h1>
-          <h1>SKILLS</h1>
-          <h1>PROJECTS</h1>
-          <h1>CONTACT </h1>
+        <div className="hidden md:flex justify-end bg-slate-600 text-white font-bold text-2xl space-x-8 underline underline-offset-1">
+          <h1 className="my-4">HOME</h1>
+          <h1 className="my-4">SKILLS</h1>
+          <h1 className="my-4">PROJECTS</h1>
+          <h1 className="my-4">CONTACT</h1>
         </div>
       </div>
       {isSideBarOpen && sideBar()}
