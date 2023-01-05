@@ -6,12 +6,12 @@ import Projects from "./Projects";
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Home />
       <Skills />
       <Projects />
-    </div>
+    </>
   );
 }
 
