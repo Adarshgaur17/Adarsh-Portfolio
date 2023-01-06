@@ -11,7 +11,7 @@ function Projects() {
   ];
 
   return (
-    <div className="text-gray-600  font-bold p-20 " id="project">
+    <div className="text-gray-600  font-bold p-16 " id="project">
       <h1 className="text-3xl mb-4">Recent Works</h1>
       {projects.map((project) => (
         <ProjectRow
