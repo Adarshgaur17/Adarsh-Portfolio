@@ -4,16 +4,50 @@ import { Link } from "react-scroll";
 
 function Navbar() {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
+  const side = () => setIsSideBarOpen(!isSideBarOpen);
+
   const sideBar = () => (
     <div className="md:hidden flex flex-col items-center opacity-75 absolute top-10 left-4 text-white  mr-5 font-bold text-md bg-slate-900 p-4 underline underline-offset-1">
-      <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
+      <Link
+        onClick={side}
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+      >
         HOME
       </Link>
-      <Link to="skill" spy={true} smooth={true} offset={0} duration={500}>
+      <Link
+        onClick={side}
+        to="skill"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+      >
         SKILLS
       </Link>
-      <h1>PROJECTS</h1>
-      <h1>CONTACT </h1>
+      <Link
+        onClick={side}
+        to="project"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+      >
+        PROJECTS
+      </Link>
+      <Link
+        onClick={side}
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+      >
+        CONTACT
+      </Link>
     </div>
   );
 
@@ -21,7 +55,7 @@ function Navbar() {
     <>
       <div>
         <GiHamburgerMenu
-          onClick={() => setIsSideBarOpen(!isSideBarOpen)}
+          onClick={side}
           className="text-gray-500 text-2xl ml-4 mt-2 md:hidden"
         />
         <div className="hidden md:flex justify-end bg-slate-600 text-white font-bold text-2xl space-x-8 underline underline-offset-1">
@@ -45,8 +79,26 @@ function Navbar() {
           >
             SKILLS
           </Link>
-          <h1 className="my-4">PROJECTS</h1>
-          <h1 className="my-4">CONTACT</h1>
+          <Link
+            className="my-4"
+            to="project"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            PROJECTS
+          </Link>
+          <Link
+            className="my-4"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            CONTACT
+          </Link>
         </div>
       </div>
       {isSideBarOpen && sideBar()}
