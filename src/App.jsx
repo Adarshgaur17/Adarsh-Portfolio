@@ -9,14 +9,14 @@ import Contact from "./Contact";
 
 function App() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Navbar />
       <Home />
       <Skills />
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 

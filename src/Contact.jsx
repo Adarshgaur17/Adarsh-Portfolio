@@ -5,7 +5,7 @@ import { RiWhatsappFill, RiLinkedinBoxFill } from "react-icons/ri";
 function Contact() {
   return (
     <div
-      className="bg-blue-100 p-16 text-gray-600 text-2xl font-bold"
+      className="bg-blue-100 mt-28 p-8 sm:p-16 text-gray-600 text-sm sm:text-2xl font-bold"
       id="contact"
     >
       <h1 className="text-3xl ">Contact Info :</h1>

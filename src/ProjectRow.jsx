@@ -1,12 +1,12 @@
 import React from "react";
 function ProjectRow(props) {
   return (
-    <div className="mt-2 md:flex ">
+    <div className="mt-10 md:flex ">
       <img className="md:h-40" src={props.url} />
       <div className="md:ml-16 ">
         <a
           href={props.link}
-          className="mt-2 text-2xl underline underline-offset-1"
+          className="mt-8 text-2xl underline underline-offset-1"
         >
           {props.title}
         </a>
