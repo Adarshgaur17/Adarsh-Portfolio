@@ -25,8 +25,26 @@ function Navbar() {
           className="text-gray-500 text-2xl ml-4 mt-2 md:hidden"
         />
         <div className="hidden md:flex justify-end bg-slate-600 text-white font-bold text-2xl space-x-8 underline underline-offset-1">
-          <h1 className="my-4">HOME</h1>
-          <h1 className="my-4">SKILLS</h1>
+          <Link
+            className="my-4"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            HOME
+          </Link>
+          <Link
+            className="my-4"
+            to="skill"
+            spy={true}
+            smooth={true}
+            offset={200}
+            duration={500}
+          >
+            SKILLS
+          </Link>
           <h1 className="my-4">PROJECTS</h1>
           <h1 className="my-4">CONTACT</h1>
         </div>
