@@ -3,7 +3,7 @@ import DownloadButton from "./DownloadButton";
 
 function Home() {
   return (
-    <div className="flex-col-reverse md:flex-row flex  p-16">
+    <div className="flex-col-reverse md:flex-row flex  p-16" id="home">
       <div>
         <h1 className="flex flex-col text-3xl font-bold mt-10 drop-shadow-2xl">
           Hi,I am Adarsh <span>Creative</span>{" "}

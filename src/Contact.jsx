@@ -8,9 +8,7 @@ function Contact() {
       className="bg-blue-100 p-20 text-gray-600 text-2xl font-bold"
       id="contact"
     >
-      <h1 className="text-3xl underline underline-offset-1  ">
-        Contact Info :
-      </h1>
+      <h1 className="text-3xl ">Contact Info :</h1>
       <MdCall className="mt-10" />
       <h1>8979766455</h1>
       <RiWhatsappFill className="mt-6" />

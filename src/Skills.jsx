@@ -32,10 +32,8 @@ function Skills() {
     },
   ];
   return (
-    <div className="p-16 mt-32 bg-blue-100 " id="skill">
-      <h1 className="text-2xl ml-6 text-gray-600 font-bold underline underline-offset-1">
-        MY SKILLS
-      </h1>
+    <div className="p-20 mt-32 bg-blue-100 " id="skill">
+      <h1 className="text-3xl ml-8  text-gray-600 font-bold ">My Skills</h1>
       <div className="flex mt-20 text-gray-500 justify-between flex-wrap items-center md:h-40 font-bold">
         {skills.map((skill) => (
           <SkillRow url={skill.url} title={skill.title} />
