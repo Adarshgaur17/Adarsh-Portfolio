@@ -11,8 +11,13 @@ function ProjectRow(props) {
           {props.title}
         </a>
         <h1 className="text-sm mt-2">{props.text}</h1>
-        <h1 className="text-sm">
-          Check this project by clicking on {props.title}.
+        <h1 className="text-sm">Check this project by clicking on title.</h1>
+        <h1>
+          Check the code of this project{" "}
+          <a href={props.projectLink} className="underline underline-offset-1 ">
+            {props.title}
+          </a>{" "}
+          on GitHub.
         </h1>
       </div>
     </div>
